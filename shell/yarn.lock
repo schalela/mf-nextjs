@@ -78,6 +78,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@module-federation/nextjs-mf@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@module-federation/nextjs-mf@npm:1.1.1"
+  dependencies:
+    webpack-sources: ^2.2.0
+  peerDependencies:
+    react: ^16 || ^17
+  checksum: 79df60252c9a31bb80a758ca633693d0ba472c29d306888c2b7805a16165e668e9a5a5ed2940c1f46ce17eb6a35f746e58b1b288a2ff45e05173371f312efa7b
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:10.2.3":
   version: 10.2.3
   resolution: "@next/env@npm:10.2.3"
@@ -2620,6 +2631,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "shell@workspace:."
   dependencies:
+    "@module-federation/nextjs-mf": ^1.1.1
     next: 10.2.3
     react: 17.0.2
     react-dom: 17.0.2
@@ -2658,6 +2670,13 @@ fsevents@~2.3.1:
     ip: ^1.1.5
     smart-buffer: ^4.1.0
   checksum: 9a5735cf9be6f756006b4c5ed23f17c15ffbfc0afb04b5d1b49516b7a27818c807a6a5b5419a65a140a1964149ec9ebb6cd8f0e06d7c60282912204d781371db
+  languageName: node
+  linkType: hard
+
+"source-list-map@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "source-list-map@npm:2.0.1"
+  checksum: d8d45f29987d00d995ccda308dcc78b710031a9958fdb5d26674d32220c952eb7a8562062638d91896628ae4eef30e1cd112a6a547563dfda0b013024c2a9bf7
   languageName: node
   linkType: hard
 
@@ -3142,6 +3161,16 @@ fsevents@~2.3.1:
   version: 4.0.2
   resolution: "webidl-conversions@npm:4.0.2"
   checksum: 75c2ada4262cda41410ec898178f4f2a31419a905415a98a0bd1b93441ce4a2b942bae2d0ac6d637b749b9d3b309be5a49dbc3b06aae9d9e65280554268a2c94
+  languageName: node
+  linkType: hard
+
+"webpack-sources@npm:^2.2.0":
+  version: 2.3.0
+  resolution: "webpack-sources@npm:2.3.0"
+  dependencies:
+    source-list-map: ^2.0.1
+    source-map: ^0.6.1
+  checksum: b929133f8b86fa91a42d2e557f2b2cd6136f62a50c10e32db9f37a63609cd4d1b3475772503c814baa2e25c02d3206110ec2add7a3aaf2794217fbf48664e72a
   languageName: node
   linkType: hard
 
