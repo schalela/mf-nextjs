@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"cd app1; yarn dev \" \"cd app2; yarn dev\" \"cd shell; yarn dev \"",
+    "build": "concurrently \"cd app1; yarn build \" \"cd app2; yarn build\" \"cd shell; yarn build \"",
+    "serve": "concurrently \"cd app1; yarn start \" \"cd app2; yarn start\" \"cd shell; yarn start \"",
+    "postinstall": "concurrently \"cd app1; yarn\" \"cd app2; yarn\" \"cd shell; yarn\""
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}

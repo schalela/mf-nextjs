@@ -12,17 +12,17 @@ module.exports = {
         type: config.output.libraryTarget,
         name: "app2",
       },
-      filename: "static/runtime/remoteEntry.js",
+      filename: "static/runtime/app2RemoteEntry.js",
       remotes: {
       },
       exposes: {
-        "./app2": "./pages/index",
+        "./luigi": "./components/luigi",
       },
     };
     config.cache = false;
     withModuleFederation(config, options, mfConf);
     if (!isServer) {
-      config.output.publicPath = "http://localhost:3001/_next/";
+      config.output.publicPath = "https://mf-app2.vercel.app//_next/";
     }
 
     return config;
