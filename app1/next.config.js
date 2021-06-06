@@ -12,11 +12,11 @@ module.exports = {
         type: config.output.libraryTarget,
         name: "app1",
       },
-      filename: "static/runtime/remoteEntry.js",
+      filename: "static/runtime/app1RemoteEntry.js",
       remotes: {
       },
       exposes: {
-        "./app1": "./pages/index",
+        "./mario": "./components/mario",
       },
     };
     config.cache = false;
