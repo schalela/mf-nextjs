@@ -1,5 +1,10 @@
-const RemoteApp2 = (await import("app2/luigi")).default
+import dynamic from 'next/dynamic'
 
-const App2 = () => (<RemoteApp2></RemoteApp2>)
+const RemoteLuigi = dynamic(
+  () => import('../components/luigi'),
+  { ssr: false }
+)
+
+const App2 = () => (<RemoteLuigi />)
 
 export default App2

@@ -1,5 +1,10 @@
-const RemoteApp1 = (await import("app1/mario")).default
+import dynamic from 'next/dynamic'
 
-const App1 = () => (<RemoteApp1></RemoteApp1>)
+const RemoteMario = dynamic(
+  () => import('../components/mario'),
+  { ssr: false }
+)
+
+const App1 = () => (<RemoteMario />)
 
 export default App1
