@@ -9,7 +9,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <script src="https://mf-app1.vercel.app/_next/static/runtime/app1RemoteEntry.js" />
-        <script src="https://mf-app2.vercel.app//_next/static/runtime/app2RemoteEntry.js" />
+        <script src="https://mf-app2.vercel.app/_next/static/runtime/app2RemoteEntry.js" />
         <Head />
         <body>
           <Main />
