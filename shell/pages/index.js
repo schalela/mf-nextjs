@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        Hello! I'm a shell, and this is local content
+        Hello! This content is hosted locally.
       </main>
     </div>
   )

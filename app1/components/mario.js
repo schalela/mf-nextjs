@@ -14,7 +14,7 @@ const Mario = () => {
       <h1 className={styles.title}>
         G'day! I'm Mario, a microfrontend.
       </h1>
-      <span>Last time I was updated: Jun 6 2021, 8:50PM</span>
+      <span>I'm hosted at <a target="_blank" href="https://mf-app1.vercel.app">https://mf-app1.vercel.app</a></span>
     </main>
   )
 }
