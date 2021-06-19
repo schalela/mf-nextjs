@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 
 const RemoteMario = dynamic(
-  () => import('../components/mario'),
+  () => import('app1/mario'),
   { ssr: false }
 )
 

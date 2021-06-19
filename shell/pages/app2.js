@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 
 const RemoteLuigi = dynamic(
-  () => import('../components/luigi'),
+  () => import("app2/luigi"),
   { ssr: false }
 )
 
